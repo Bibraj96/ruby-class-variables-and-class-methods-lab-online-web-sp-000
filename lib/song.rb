@@ -17,11 +17,7 @@ class Song
   end
 
   def self.genres
-    @@genres.map do |genre|
-      if @@genres.include?(genre) == false
-        @@genres << genre
-      end
-    end
+    @@genres.uniq!
   end
 
 end
