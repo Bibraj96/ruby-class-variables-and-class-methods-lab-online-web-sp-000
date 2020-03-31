@@ -25,4 +25,15 @@ class Song
     @@artists.uniq!
   end
 
+  def self.genre_count
+    genre_hash = {}
+    @@genres.map do |genre_name, num|
+      if genre_hash.include?(genre_name) == true
+        num += 1
+      else
+        genre.hash[genre_name] = num
+      end
+    end
+  end
+
 end
