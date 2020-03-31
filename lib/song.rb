@@ -13,5 +13,7 @@ class Song
     @@genres.map do |genre|
       if @@genres.include?(genre) == false
         @@genres << genre
+      end
+    end
   end
 end
