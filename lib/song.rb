@@ -9,4 +9,9 @@ class Song
   def self.count
     @@count
   end
+  def self.genres
+    @@genres.map do |genre|
+      if @@genres.include?(genre) == false
+        @@genres << genre
+  end
 end
